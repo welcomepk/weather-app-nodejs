@@ -24,7 +24,7 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
     console.log(req.url);
     res.render('index', {
-        title: "Weather 🌤️ has been changed",
+        title: "Weather 🌤️",
         name: "pramod kamble",
     })
 })
