@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "weather-with-nodejs",
+    "builds": [{
+        "src": "src/app.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/app.js"
+        }
+    ]
+}

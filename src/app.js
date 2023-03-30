@@ -6,7 +6,6 @@ require('dotenv').config()
 // creating express app
 const app = express();
 const port = process.env['PORT'] || 3000
-console.log(process.env);
 
 // define paths for express config
 const publicDirPath = path.join(__dirname, '../public');
