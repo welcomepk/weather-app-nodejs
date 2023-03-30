@@ -1,4 +1,3 @@
-console.log("javascript loaded from static files");
 const weather_form = document.querySelector('form');
 const weather_input = document.querySelector(".weather-input");
 const weather_info_desc = document.querySelector(".weather_info-desc");
