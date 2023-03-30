@@ -2,9 +2,11 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs');
 const forecast = require('./utils/forecast');
-
+require('dotenv').config()
 // creating express app
 const app = express();
+const port = process.env['PORT'] || 3000
+console.log(process.env);
 
 // define paths for express config
 const publicDirPath = path.join(__dirname, '../public');
@@ -89,6 +91,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Server is listening on port 3000 ...");
+app.listen(port, () => {
+    console.log("Server is listening on port " + port);
 })

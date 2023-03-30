@@ -16,7 +16,7 @@ const loadweatherData = (location) => {
     weather_loading.style.display = "block";
     error_msg.style.display = "none";
 
-    fetch(`http://localhost:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
         .then(response => response.json())
         .then(data => {
             if (data.error) {
